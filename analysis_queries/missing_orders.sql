@@ -1,4 +1,6 @@
 -- Calculate the percent of missing reorder data for each quarter
+-- Q2 missing percent = 0.14%
+-- Q3 missing percent = 0.38%
 SELECT
     ROUND((SELECT SUM(q2_reordered) AS q2_not_missing
         FROM total_reorders_augmented

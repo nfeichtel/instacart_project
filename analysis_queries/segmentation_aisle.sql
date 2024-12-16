@@ -1,3 +1,6 @@
+-- Comparing reorder rates between Q2 and Q3, segmented by aisle
+-- Removed items in "missing" asile. Missing items make up less than % of total items
+
 SELECT
     aisle,
     SUM(q2_reordered) AS q2,

@@ -29,7 +29,7 @@ WITH negative_dairyeggs AS
 SELECT
     aisle,
     product_difference,
-    ROUND(product_difference / (SELECT SUM(product_difference) FROM negative_dairyeggs) * 100, 2)
+    ROUND(product_difference / (SELECT SUM(product_difference) FROM negative_dairyeggs) * 100, 2) AS percent_of_decrease
 FROM negative_dairyeggs;
 
 

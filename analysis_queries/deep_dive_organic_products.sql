@@ -36,13 +36,14 @@ total_department AS
 
 SELECT
 td.department,
-q2,
 q2_organic,
-q3,
+ROUND(q2_organic/q2 * 100, 2) AS q2_percent_organic,
 q3_organic,
+ROUND(q3_organic/q3 * 100, 2) AS q3_percent_organic,
 difference,
-difference_organic
+difference_organic,
+ROUND((q3_organic - q2_organic)/q2_organic * 100, 2) AS organic_change
 FROM organic_department AS od
 JOIN total_department AS td
 ON od.department = td.department
-ORDER BY difference_organic
+ORDER BY organic_change ASC

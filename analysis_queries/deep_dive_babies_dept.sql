@@ -9,10 +9,10 @@ SELECT
     product_name,
     SUM(q2_reordered) AS q2,
     SUM(q3_reordered) AS q3,
-    SUM(q3_reordered) - SUM(q2_reordered) AS product_difference,
-    ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2) AS product_percent_change
+    SUM(q3_reordered) - SUM(q2_reordered) AS product_difference
+
 
 -- Filter for desired department in the line below
-FROM (SELECT * FROM total_reorders_augmented WHERE aisle != 'missing' AND department = 'bulk' )
+FROM (SELECT * FROM total_reorders_augmented WHERE aisle != 'missing' AND department = 'dairy eggs' AND aisle = 'cream')
 GROUP BY aisle, product_name
-ORDER BY ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2)
+ORDER BY product_difference 

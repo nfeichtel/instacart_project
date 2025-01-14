@@ -11,5 +11,5 @@ SELECT
     ROUND(SUM(q3_reordered) / (SELECT SUM(q3_reordered) FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing')) * 100, 2) AS per_q3_reorders
 FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing')
 GROUP BY department
-ORDER BY ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2);
+ORDER BY difference DESC; --ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2);
 

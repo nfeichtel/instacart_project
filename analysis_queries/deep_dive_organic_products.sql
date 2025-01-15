@@ -8,6 +8,7 @@ FROM (SELECT * FROM total_reorders_augmented WHERE aisle != 'missing')
 WHERE product_name ILIKE '%organic%';
 */
 
+--nearly every single department saw a reduction in organic reorders
 WITH organic_department AS 
 (
     SELECT

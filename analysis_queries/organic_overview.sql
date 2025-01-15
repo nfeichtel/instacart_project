@@ -6,7 +6,7 @@ SELECT
     SUM(q3_reordered) AS q3_organic,
     SUM(q3_reordered) - SUM(q2_reordered) AS difference_organic,
     ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2) AS percent_change_organic
-FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing' AND product_name ILIKE '%organic%')
+FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing' AND product_name ILIKE '%organic%');
 
 
 SELECT
@@ -14,4 +14,4 @@ SELECT
     SUM(q3_reordered) AS q3,
     SUM(q3_reordered) - SUM(q2_reordered) AS difference,
     ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2) AS percent_change
-FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing')
+FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing');

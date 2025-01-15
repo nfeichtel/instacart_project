@@ -9,7 +9,7 @@ SELECT
 FROM (SELECT * FROM total_reorders_augmented WHERE aisle != 'missing' AND department != 'missing')
 GROUP BY product_name
 HAVING SUM(q2_reordered) != 0
-ORDER BY  difference ASC
+ORDER BY  difference DESC
 LIMIT 20
 
 -- a lot of large reorder differences are organic products -> was there an increase in price that led to this drop off?

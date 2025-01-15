@@ -12,4 +12,4 @@ SELECT
 FROM (SELECT * FROM total_reorders_augmented WHERE aisle != 'missing')
 GROUP BY aisle
 --ORDER BY ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2)
-ORDER BY per_q2_reorders DESC
+ORDER BY difference ASC

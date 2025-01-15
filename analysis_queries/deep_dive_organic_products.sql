@@ -47,4 +47,4 @@ SELECT
 FROM organic_department AS od
 JOIN total_department AS td
 ON od.department = td.department
-ORDER BY organic_change ASC
+ORDER BY difference_organic ASC

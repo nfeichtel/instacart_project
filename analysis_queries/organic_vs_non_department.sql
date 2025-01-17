@@ -36,19 +36,32 @@ WITH organic_department AS
         END AS total_percent_change
     FROM(SELECT * FROM total_reorders_augmented WHERE department != 'missing')
     GROUP BY department
-    ORDER BY total_difference)
+    ORDER BY total_difference),
+
+    quarterly_reorder_percentages AS 
+    (SELECT
+        department,
+        ROUND(SUM(q2_reordered) / (SELECT SUM(q2_reordered) FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing')) * 100, 2) AS percent_q2_reorders,
+        ROUND(SUM(q3_reordered) / (SELECT SUM(q3_reordered) FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing')) * 100, 2) AS percent_q3_reorders
+    FROM (SELECT * FROM total_reorders_augmented WHERE department != 'missing')
+    GROUP BY department)
+
 
 SELECT
-    department_total,
+    department_total AS department,
     total_difference,
-    non_organic_difference,
-    organic_difference,
     total_percent_change,
+    percent_q2_reorders,
+    percent_q3_reorders,
+    non_organic_difference,
     non_organic_percent_change,
+    organic_difference,
     organic_percent_change
 FROM total_department
 JOIN organic_department
     ON department_total = department_organic
 JOIN non_organic_department
     ON department_total = department_non_organic
+JOIN quarterly_reorder_percentages
+    ON department_total = quarterly_reorder_percentages.department
 ORDER BY total_difference

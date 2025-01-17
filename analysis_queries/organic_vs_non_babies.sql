@@ -34,7 +34,7 @@ WITH organic_aisle AS
         CASE WHEN SUM(q2_reordered) != 0 THEN ROUND((SUM(q3_reordered) - SUM(q2_reordered)) / SUM(q2_reordered) * 100, 2)
             ELSE NULL
         END AS total_percent_change
-    FROM(SELECT * FROM total_reorders_augmented WHERE aisle != 'missing')
+    FROM(SELECT * FROM total_reorders_augmented WHERE aisle != 'missing' AND department = 'babies')
     GROUP BY aisle
     ORDER BY total_difference)
 

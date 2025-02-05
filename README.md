@@ -4,6 +4,18 @@
 
 Total product offerings, in x aisels, in x departments
 
+Insights and recommendations are provided on the following key areas:
+
+-
+-
+-
+
+The SQL queries used to inspect and clean the data for this analysis can be found [here](setup_queries).
+
+Analysis SQL queries regarding various business questions can be found [here](analysis_queries).
+
+An interactive Tableau dashboard used to report and explore customer service trends can be found [here](https://public.tableau.com/app/profile/nick.feichtel/viz/InstacartReorderAnalysis/ExecutiveSummary#1).
+
 ## Data
 
 ## Executive Summary

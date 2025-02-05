@@ -14,7 +14,7 @@ The SQL queries used to inspect and clean the data for this analysis can be foun
 
 Analysis SQL queries regarding various business questions can be found [here](analysis_queries).
 
-An interactive Tableau dashboard used to report and explore customer service trends can be found [here](https://public.tableau.com/app/profile/nick.feichtel/viz/InstacartReorderAnalysis/ExecutiveSummary#1).
+An interactive Tableau dashboard used to report and explore customer service trends can be found [here](https://public.tableau.com/app/profile/nick.feichtel/viz/InstacartReorderAnalysis/ExecutiveSummary).
 
 ## Data
 

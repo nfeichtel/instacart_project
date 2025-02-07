@@ -9,6 +9,7 @@ Insights and recommendations are provided on the following key areas:
 
 - Overall order trends by department
 - Comparitive analysis of organic and non-organic product orders
+- Additional interesting finds
 
 The SQL queries used to inspect and clean the data for this analysis can be found [here](setup_queries).
 
@@ -36,12 +37,22 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 
 ### Comparative Product Analysis: Organic vs. Non-Organic
 
-![Non-Organic Orders Dash](assets/non_organic_orders.png)
+- Currently, 38,213 different products can be ordered through instacart. Of the products offered, 4,107 are organic, and the rest (38,213), are non-organic. Products in the "Bulk", "Produce", and "Babies" department have the highest portion of their product offerings being organic at 57%, 29%, and 26% respectively. Products in the "Pets", "Alcohol", and "Household" department have the lowest portion of their product offerings being organic at 3%, 2%, and <1% respectively.
 
-![Organic Order Dash](assets/organic_orders.png)
 
-- Currently, 38,213 different products can be ordered through instacart. Of the products offered, 4,107 are organic, and the rest (38,213), are non-organic. Products in the "Bulk", "Produce", and "Babies" department have the highest portion of their product offerings being organic at 57%, 29%, and 26% respectively. Products in the "Pets", "Alcohol", and "Household" department have the lowest portion of their product offerings being organic at 3%, 2%, and <1% respectively. 
+<br>![Non-Organic Orders Dash](assets/non_organic_orders.png)
+
 - From Q2 to Q3, 15 departments saw increases in non-organic products and 5 departments saw decreases. Of the departments that saw positive increases in non-organic products, 9 of them saw increases in orders of more than 30,000. Similar to the overall trends, the "Produce", "Frozen", and "Household" departments saw the greatest increase in product orders, while the "Dairy Eggs", "Babies", and "Alcohol" departments saw the largest decreases in product orders.
+- Within the "Produce" department, 4 of the 5 product categories saw increases in both non-organic and organic products. Only fresh fruit porducts saw an overall decline in orders and this was due to a large decrease of 66,884 organic orders. **"Produce" contiues to be our strogest department, and does not seem to be greatly impacted by decrease in organic orders trend that we have been seeing.**
+- Within the "Frozen" department, 10 of the 11 product categories saw overall increases in orders. Interestingly, 9 of the 11 product categories saw decreases in organic orders ranging from -4% to -37%. The decrease in organic products ordered in the "Frozen" department was offset by large increases in non-organic *Frozen* products ranging from 5% to 47%. **Non-Organic products continue to make-up for the loses in Organic orders.**
+
+<br>![Organic Order Dash](assets/organic_orders.png)
+
+- From Q2 to Q3, 17 departments saw decreases in organic orders, and the 3 departments that saw increases in organic orders saw a combined increase of a neglible 59 orders. **A shift away from organic products is a trend that should be continued to be monitored.** 
+
+### Additional Interesting Finds
+
+- Beverages and Alcoholic beverages
 
 
 

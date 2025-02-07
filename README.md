@@ -40,6 +40,9 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 
 ![Organic Order Dash](assets/organic_orders.png)
 
+- Currently, 38,213 different products can be ordered through instacart. Of the products offered, 4,107 are organic, and the rest (38,213), are non-organic. Products in the "Bulk", "Produce", and "Babies" department have the highest portion of their product offerings being organic at 57%, 29%, and 26% respectively. Products in the "Pets", "Alcohol", and "Household" department have the lowest portion of their product offerings being organic at 3%, 2%, and <1% respectively. 
+- From Q2 to Q3, 15 departments saw increases in non-organic products and 5 departments saw decreases. Of the departments that saw positive increases in non-organic products, 9 of them saw increases in orders of more than 30,000. Similar to the overall trends, the "Produce", "Frozen", and "Household" departments saw the greatest increase in product orders, while the "Dairy Eggs", "Babies", and "Alcohol" departments saw the largest decreases in product orders.
+
 
 
 ## Recommendations

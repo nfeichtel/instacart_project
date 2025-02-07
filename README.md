@@ -2,7 +2,7 @@
 
 ## Background
 
-Instacart is a grocery deliver service founded in 2012 that curently provides service from more than 85,000 locations. Instacart delivers over 38,213 prodcuts that are grouped into 120 categories across 120 departments. Data on product orderings from Q2 and Q3 have been analyzed to identify product trends and assist in decision making.
+Instacart is a grocery deliver service founded in 2012 that curently provides service from more than 85,000 locations. Instacart delivers over 38,213 prodcuts that are grouped into 133 categories across 20 departments. Data on product orderings from Q2 and Q3 have been analyzed to identify product trends and assist in decision making.
 
 
 Insights and recommendations are provided on the following key areas:

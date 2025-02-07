@@ -47,9 +47,9 @@ SELECT
     non_organic_percent_change,
     organic_percent_change
 FROM total_aisle
-JOIN organic_aisle
+LEFT JOIN organic_aisle
     ON aisle_total = aisle_organic
-JOIN non_organic_aisle
+LEFT JOIN non_organic_aisle
     ON aisle_total = aisle_non_organic
 ORDER BY total_difference;
 

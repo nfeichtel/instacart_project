@@ -2,7 +2,7 @@
 
 ## Background
 
-Instacart is a grocery deliver service founded in 2012 that curently provides service from more than 85,000 locations. Instacart delivers over 38,213 prodcuts that are categorized into 20 departments. Data on product orderings from Q2 and Q3 have been analyzed to identify product trends and assist in decision making.
+Instacart is a grocery deliver service founded in 2012 that curently provides service from more than 85,000 locations. Instacart delivers over 38,213 prodcuts that are grouped into 120 categories across 120 departments. Data on product orderings from Q2 and Q3 have been analyzed to identify product trends and assist in decision making.
 
 
 Insights and recommendations are provided on the following key areas:
@@ -45,10 +45,13 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 - From Q2 to Q3, 15 departments saw increases in non-organic products and 5 departments saw decreases. Of the departments that saw positive increases in non-organic products, 9 of them saw increases in orders of more than 30,000. Similar to the overall trends, the *Produce*, *Frozen*, and *Household* departments saw the greatest increase in product orders, while the *Dairy Eggs*, *Babies*, and *Alcohol* departments saw the largest decreases in product orders.
 - Within the *Produce* department, 4 of the 5 product categories saw increases in both non-organic and organic products. Only fresh fruit porducts saw an overall decline in orders and this was due to a large decrease of 66,884 organic orders. **"Produce" contiues to be our strogest department, and does not seem to be greatly impacted by decrease in organic orders trend that we have been seeing.**
 - Within the *Frozen* department, 10 of the 11 product categories saw overall increases in orders. Interestingly, 9 of the 11 product categories saw decreases in organic orders ranging from -4% to -37%. The decrease in organic products ordered in the *Frozen* department was offset by large increases in non-organic *Frozen* products ranging from 5% to 47%. **Non-Organic products continue to make-up for the loses in Organic orders.**
+- *Household* products make up only 1.5% of orders, but its 22% increase in orders is still noteworthy. Organic products make up only 0.22% of offered *Household* products. The cleaning products category saw the largest increase in orders at nearly 10,000.
 
 <br>![Organic Order Dash](assets/organic_orders.png)
 
 - From Q2 to Q3, 17 departments saw decreases in organic orders, and the 3 departments that saw increases in organic orders saw a combined increase of a neglible 59 orders. **A shift away from organic products is a trend that should be continued to be monitored.** 
+- All product categories within the *Dairy Eggs* department saw a drop in organic orders except for eggs. Eggs is the only product to see increases in both organic (+3%) and non-organic (+11%) orders resulting in an overall 7% order increase. Two product categories within *Dairy Eggs* that saw a large decrease in both organic and non-organic products were yogurt and milk. Yogurt saw its orders decrease by 11% (105k orders) in Q3, while milk saw a 13% (88.7k orders) reduction Inflation causing higher dairy prices could be to blame for the drop in milk and yogurt puchases, but egg orders appear to be unaffected by this trend.
+- The *Babies* department saw a nearly 54k decrease in orders with this decreases being approximately split evenly between organic and non-organic orders. The baby food formula category makes up 99.4% of the decrease in its department. We should see if our pricing algins with other competitors and research what additional factors could be impacting baby formula orders.
 
 ### Additional Interesting Finds
 
@@ -57,6 +60,8 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 
 
 ## Recommendations
+
+- Work with marketing on seasonal promotions (end of quarter cleaning. Start the new quarter off on a clean note)
 
 ## Assumptions and Caveats
 

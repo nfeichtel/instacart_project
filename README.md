@@ -9,7 +9,7 @@ Insights and recommendations are provided on the following key areas:
 
 - Overall order trends by department
 - Comparitive analysis of organic and non-organic product orders
-- Additional interesting finds
+- Additional interesting findings
 
 <br>The SQL queries used to inspect and clean the data for this analysis can be found [here](setup_queries).
 
@@ -45,17 +45,24 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 <br>![Non-Organic Orders Dash](assets/non_organic_orders.png)
 
 - From Q2 to Q3, 15 departments saw increases in non-organic products and 5 departments saw decreases. Of the departments that saw positive increases in non-organic products, 9 of them saw increases in orders of more than 30,000. Similar to the overall trends, the *Produce*, *Frozen*, and *Household* departments saw the greatest increase in product orders, while the *Dairy Eggs*, *Babies*, and *Alcohol* departments saw the largest decreases in product orders.
+
+![Produce and Frozen Support](assets/produce_and_summary_support.png)
+
 - Within the *Produce* department, 4 of the 5 product categories saw increases in both non-organic and organic products. Only fresh fruit porducts saw an overall decline in orders and this was due to a large decrease of 66,884 organic orders. **"Produce" contiues to be our strogest department, and does not seem to be greatly impacted by decrease in organic orders trend that we have been seeing.**
 - Within the *Frozen* department, 10 of the 11 product categories saw overall increases in orders. Interestingly, 9 of the 11 product categories saw decreases in organic orders ranging from -4% to -37%. The decrease in organic products ordered in the *Frozen* department was offset by large increases in non-organic *Frozen* products ranging from 5% to 47%. **Non-Organic products continue to make-up for the loses in Organic orders.**
-- *Household* products make up only 1.5% of orders, but its 22% increase in orders is still noteworthy. Organic products make up only 0.22% of offered *Household* products. The cleaning products category saw the largest increase in orders at nearly 10,000.
 
 <br>![Organic Order Dash](assets/organic_orders.png)
 
 - From Q2 to Q3, 17 departments saw decreases in organic orders, and the 3 departments that saw increases in organic orders saw a combined increase of a neglible 59 orders. **A shift away from organic products is a trend that should be continued to be monitored.** 
+
+![Dairy and Bsbies Support](assets/babies_and_dairy_support.png)
+
 - All product categories within the *Dairy Eggs* department saw a drop in organic orders except for eggs. Eggs is the only product to see increases in both organic (+3%) and non-organic (+11%) orders resulting in an overall 7% order increase. Two product categories within *Dairy Eggs* that saw a large decrease in both organic and non-organic products were yogurt and milk. Yogurt saw its orders decrease by 11% (105k orders) in Q3, while milk saw a 13% (88.7k orders) reduction Inflation causing higher dairy prices could be to blame for the drop in milk and yogurt puchases, but egg orders appear to be unaffected by this trend.
 - The *Babies* department saw a nearly 54k decrease in orders with this decreases being approximately split evenly between organic and non-organic orders. The baby food formula category makes up 99.4% of the decrease in its department. We should see if our pricing algins with other competitors and research what additional factors could be impacting baby formula orders.
 
-### Additional Interesting Finds
+### Additional Interesting Findings
+
+![Alc and Bev Support](assets/beverages_support.png)
 
 - Across the *Alcohol* department all prodcut categories saw a decline. Drinks in the *Beverages* department that can be seen as alcohol alternatives, such as sparkling water, soft drinks, and juices all saw modest increases. This could be related to the recent trend of consumers lvinig an increasingly sober lifestyle. Another factor to consider is that services that specialize in alcohol deliveries might have a higher share of the alcohol delivery market.
 
@@ -65,4 +72,6 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 - Work with marketing on seasonal promotions (end of quarter cleaning. Start the new quarter off on a clean note)
 
 ## Assumptions and Caveats
+- missing data
+- data augmented
 

@@ -11,13 +11,15 @@ Insights and recommendations are provided on the following key areas:
 - Comparitive analysis of organic and non-organic product orders
 - Additional interesting finds
 
-The SQL queries used to inspect and clean the data for this analysis can be found [here](setup_queries).
+<br>The SQL queries used to inspect and clean the data for this analysis can be found [here](setup_queries).
 
 Analysis SQL queries regarding various business questions can be found [here](analysis_queries).
 
 An interactive Tableau dashboard used to report and explore customer service trends can be found [here](https://public.tableau.com/app/profile/nick.feichtel/viz/InstacartReorderAnalysis/ExecutiveSummary).
 
 ## Data
+
+![ERD](assets/erd.png)
 
 ## Executive Summary
 

@@ -4,7 +4,6 @@
 
 Instacart is a grocery deliver service founded in 2012 that curently provides service from more than 85,000 locations. Instacart delivers over 38,213 prodcuts that are grouped into 133 categories across 20 departments. Data on product orderings from Q2 and Q3 have been analyzed to identify product trends and assist in decision making.
 
-
 Insights and recommendations are provided on the following key areas:
 
 - Overall order trends by department
@@ -20,6 +19,14 @@ An interactive Tableau dashboard used to report and explore customer service tre
 ## Data
 
 ![ERD](assets/erd.png)
+
+Instacart's main database structure as seen above consists of six tables: aisles, deparments, products, orders, order_products_prior, and order_products_curr with a total row count of 38,674,649 records. A description of each table is as follows:
+- products: all products that instacart currently delivers
+- aisles: detailed categories for products
+- deparments: high level product categorization
+- orders: details about orders and users
+- order_products_prior: order information for the previous quarter (Q2)
+- order_products_curr: order information for the current quarter (Q3)
 
 ## Executive Summary
 
@@ -70,8 +77,14 @@ From Q2 2024 to Q3 2024 Instacart's overall orders increased by 333,587. This 1.
 ## Recommendations
 
 - Work with marketing on seasonal promotions (end of quarter cleaning. Start the new quarter off on a clean note)
+- add financial data
+- increase promotional offerings for organic products
+- Dinner and lunch creation ideas. increase product orderings with a "make this meal" option. could recommend drinks and sides to go with it.
+- Look into expanding beyond grocery store delivery (similar to gopuff, "instacart market", ) allowing us to deliver products at lower prices
+- bundle: movie night bundle, party bundle, dinner bundle
 
 ## Assumptions and Caveats
+
 - missing data
 - data augmented
 
